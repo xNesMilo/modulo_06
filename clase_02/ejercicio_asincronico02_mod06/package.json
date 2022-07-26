@@ -1,0 +1,15 @@
+{
+  "name": "ejercicio_asincronico02_mod06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "casa_cambio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Camilo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "moment": "^2.29.4"
+  }
+}
