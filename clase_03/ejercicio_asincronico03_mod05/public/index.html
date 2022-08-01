@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>American Connection
+  </title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -15,15 +16,15 @@
     <h4 style="text-align: center;">American connect</h4>
     <div class="row">
       <div class="col-3 ">
-        <form action="/crear" method="get">
+        <form action="/crear" id="submit_crear" method="get">
           <div class="mb-3">
             <h4>Crear un archivo</h4>
-            <label for="exampleFormControlInput1" class="form-label">Nombre del archivo</label>
-            <input type="text" name="nombre" class="form-control" id="exampleFormControlInput1" required placeholder=>
+            <label class="form-label">Nombre del archivo</label>
+            <input type="text" name="nombre" id="nombre_crear" class="form-control" required>
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Contenido</label>
-            <textarea name="contenido" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            <textarea name="contenido" id="contenido_crear" class="form-control" rows="3" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Crear archivo</button>
         </form>
@@ -32,22 +33,22 @@
         <form action="/leer" method="get">
           <div class="mb-3">
             <h4>Leer un archivo</h4>
-            <label for="exampleFormControlInput1" class="form-label">Nombre del archivo</label>
-            <input type="text" name= "name2" class="form-control" id="exampleFormControlInput1" placeholder=>
+            <label class="form-label">Nombre del archivo</label>
+            <input type="text" name= "leer" class="form-control" required>
           </div>
           <button type="submit" class="btn btn-info">Consultar archivo</button>
         </form>
       </div>
       <div class="col-3 ">
-        <form action="/eliminar" method="get">
+        <form action="/renombrar" method="get">
           <div class="mb-3">
             <h4>Renombrar un archivo</h4>
-            <label for="exampleFormControlInput1" class="form-label">Nombre del archivo</label>
-            <input type="text" name="name5"class="form-control" id="exampleFormControlInput1" placeholder=>
+            <label class="form-label">Nombre del archivo</label>
+            <input type="text" name="nuevo" class="form-control" required>
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nuevo nombre del archivo</label>
-            <input type="text" name="name5"class="form-control" id="exampleFormControlInput1" placeholder=>
+            <label class="form-label">Nuevo nombre del archivo</label>
+            <input type="text" name="renombrar" class="form-control" required>
           </div>
           <button type="submit" class="btn btn-warning">Renombrar archivo</button>
         </form>
@@ -56,14 +57,15 @@
         <form action="/eliminar" method="get">
           <div class="mb-3">
             <h4>Eliminar un archivo</h4>
-            <label for="exampleFormControlInput1" class="form-label">Nombre del archivo</label>
-            <input type="text" name="name5"class="form-control" id="exampleFormControlInput1" placeholder=>
+            <label class="form-label">Nombre del archivo</label>
+            <input type="text" name="eliminar"class="form-control" required>
           </div>
           <button type="submit" class="btn btn-danger">Eliminar archivo</button>
         </form>
       </div>
     </div>
   </div>
+  <script src="ejemploajax.js"> </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
