@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: white;
+}
+#texto{
+    width: 250px;
+    text-align: center;
+    border-radius: 5px;
+}
+#boton{
+    width: 200px;
+    background-color: black;
+    border-color: azure;
+    color: white;
+    border-radius: 5px;
+}

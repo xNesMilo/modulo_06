@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="#000000 black">
+    <nav>
+        <div class="nav-wrapper #000000 black">
+            <a href="#" class="brand-logo center">Black and White Spa</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html"></a></li>
+                <li><a href="badges.html"></a></li>
+                <li><a href="collapsible.html"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4 ">
+        <div class="row">
+            <div class="col 4 offset-s4">
+                
+                <form action="/cargar_imagen" method="get" id="form-center">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label ">URL de Imagen</label>
+                        <input type="url" class="form-control #ffffff white" id="imagen" name="imagen" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary #212121 grey darken-4">Subir</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
