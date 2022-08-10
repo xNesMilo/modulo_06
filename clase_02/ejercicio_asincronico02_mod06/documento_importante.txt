@@ -1,4 +1,0 @@
-A la fecha: julio 26º 2022, 7:17:42 pm
-    Fue realizada cotización con los siguientes datos:
-    Cantidad de pesos a convertir: 200000 pesos
-    Convertido a "dolar" da un total de: $212.53307545986846.-
